@@ -1,0 +1,185 @@
+2021-04-24 00:35:26.468  INFO 79262 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 14.0.1 on Saravanans-MacBook-Pro.local with PID 79262 (/Users/jeyalakshmi/eclipse-workspace/demo/target/classes started by jeyalakshmi in /Users/jeyalakshmi/eclipse-workspace/demo)
+2021-04-24 00:35:26.472  INFO 79262 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2021-04-24 00:35:27.052  INFO 79262 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-24 00:35:27.122  INFO 79262 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
+2021-04-24 00:35:28.008  INFO 79262 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-24 00:35:28.018  INFO 79262 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-24 00:35:28.019  INFO 79262 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-24 00:35:28.108  INFO 79262 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-24 00:35:28.108  INFO 79262 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1568 ms
+2021-04-24 00:35:28.247  INFO 79262 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-24 00:35:28.802  INFO 79262 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-24 00:35:28.854  INFO 79262 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-24 00:35:28.909  INFO 79262 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-24 00:35:29.069  INFO 79262 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-24 00:35:29.187  INFO 79262 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-04-24 00:35:29.803  INFO 79262 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-24 00:35:29.811  INFO 79262 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 00:35:30.520  WARN 79262 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 00:35:30.607  INFO 79262 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 00:35:31.295  INFO 79262 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-24 00:35:31.303  INFO 79262 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 5.502 seconds (JVM running for 5.887)
+2021-04-24 00:35:46.780  INFO 79262 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-24 00:35:46.781  INFO 79262 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-24 00:35:46.782  INFO 79262 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-24 00:35:46.813  INFO 79262 --- [http-nio-8080-exec-1] tConfig$$EnhancerBySpringCGLIB$$fe5dad66 : -----Inside Before Advice-----
+2021-04-24 00:35:46.826  INFO 79262 --- [http-nio-8080-exec-1] c.e.controller.CandidateController       : ----Get all the candidates list----
+2021-04-24 00:36:43.423  INFO 79262 --- [http-nio-8080-exec-2] tConfig$$EnhancerBySpringCGLIB$$fe5dad66 : -----Inside Around Advice Request-----CreateCandidateRequest [firstName=asd, lastName=sdf, email=stridsfng, street=asdf, city=striasdfsng, technologies=[CreateTechRequest [tech=strisdfng, experience=fs]]]
+2021-04-24 00:36:43.424  INFO 79262 --- [http-nio-8080-exec-2] tConfig$$EnhancerBySpringCGLIB$$fe5dad66 : -----Inside Before Advice-----
+2021-04-24 00:36:43.424  INFO 79262 --- [http-nio-8080-exec-2] c.e.controller.CandidateController       : -----Create Candidate----
+2021-04-24 00:36:43.512  INFO 79262 --- [http-nio-8080-exec-2] tConfig$$EnhancerBySpringCGLIB$$fe5dad66 : ----After Around Advice Response----CandidateResponse [id=26, firstName=asd, lastName=sdf, email=stridsfng, street=asdf, city=striasdfsng, technologies=[TechResponse [id=13, tech=strisdfng, experience=fs]]]
+2021-04-24 00:52:55.752  INFO 79262 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-24 00:52:55.761  INFO 79262 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 00:52:55.776  INFO 79262 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-24 00:52:55.804  INFO 79262 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-24 13:31:18.787  INFO 80801 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 14.0.1 on Saravanans-MacBook-Pro.local with PID 80801 (/Users/jeyalakshmi/eclipse-workspace/demo/target/classes started by jeyalakshmi in /Users/jeyalakshmi/eclipse-workspace/demo)
+2021-04-24 13:31:18.790  INFO 80801 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2021-04-24 13:31:19.349  INFO 80801 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-24 13:31:19.415  INFO 80801 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+2021-04-24 13:31:20.288  INFO 80801 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-24 13:31:20.298  INFO 80801 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-24 13:31:20.298  INFO 80801 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-24 13:31:20.390  INFO 80801 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-24 13:31:20.390  INFO 80801 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1540 ms
+2021-04-24 13:31:20.531  INFO 80801 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-24 13:31:21.097  INFO 80801 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-24 13:31:21.153  INFO 80801 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-24 13:31:21.218  INFO 80801 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-24 13:31:21.416  INFO 80801 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-24 13:31:21.545  INFO 80801 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-04-24 13:31:22.245  INFO 80801 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-24 13:31:22.256  INFO 80801 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 13:31:23.021  WARN 80801 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 13:31:23.113  INFO 80801 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 13:31:23.938  INFO 80801 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-24 13:31:23.945  INFO 80801 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 5.798 seconds (JVM running for 6.176)
+2021-04-24 13:31:45.118  INFO 80801 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-24 13:31:45.119  INFO 80801 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-24 13:31:45.121  INFO 80801 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-24 13:31:45.961  INFO 80801 --- [http-nio-8080-exec-7] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 261 ms
+2021-04-24 13:32:58.552  INFO 80801 --- [http-nio-8080-exec-1] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Around Advice Request-----UpdateCandidateRequest [id=14, firstName=Harry, lastName=string, email=string]
+2021-04-24 13:32:58.553  INFO 80801 --- [http-nio-8080-exec-1] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Before Advice-----
+2021-04-24 13:32:58.568  INFO 80801 --- [http-nio-8080-exec-1] c.e.controller.CandidateController       : -----Updating candidate details------
+2021-04-24 13:32:58.745  INFO 80801 --- [http-nio-8080-exec-1] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : ----After Around Advice Response----CandidateResponse [id=14, firstName=Harry, lastName=William, email=james@gmail.com, street=Clowes street, city=Mickleham, technologies=[TechResponse [id=1, tech=Java, experience=4 years]]]
+2021-04-24 13:33:15.903  INFO 80801 --- [http-nio-8080-exec-2] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Before Advice-----
+2021-04-24 13:33:15.904  INFO 80801 --- [http-nio-8080-exec-2] c.e.controller.CandidateController       : -----Update candidate's firstname by id-----
+2021-04-24 13:34:48.323  INFO 80801 --- [http-nio-8080-exec-3] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Around Advice Request-----CreateCandidateRequest [firstName=Harry, lastName=Potter, email=harry@gmail.com, street=clowes street, city=Sydney, technologies=[CreateTechRequest [tech=Python, experience=5 years]]]
+2021-04-24 13:34:48.324  INFO 80801 --- [http-nio-8080-exec-3] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Before Advice-----
+2021-04-24 13:34:48.324  INFO 80801 --- [http-nio-8080-exec-3] c.e.controller.CandidateController       : -----Create Candidate----
+2021-04-24 13:34:48.377  INFO 80801 --- [http-nio-8080-exec-3] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : ----After Around Advice Response----CandidateResponse [id=27, firstName=Harry, lastName=Potter, email=harry@gmail.com, street=clowes street, city=Sydney, technologies=[TechResponse [id=14, tech=Python, experience=5 years]]]
+2021-04-24 13:34:59.471  INFO 80801 --- [http-nio-8080-exec-6] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Before Advice-----
+2021-04-24 13:34:59.472  INFO 80801 --- [http-nio-8080-exec-6] c.e.controller.CandidateController       : ----Get all the candidates list----
+2021-04-24 13:35:44.451  INFO 80801 --- [http-nio-8080-exec-5] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Around Advice Request-----CreateCandidateRequest [firstName=Henry, lastName=Michael, email=henry@gmail.com, street=primrose street, city=Sydney, technologies=[]]
+2021-04-24 13:35:44.451  INFO 80801 --- [http-nio-8080-exec-5] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Before Advice-----
+2021-04-24 13:35:44.452  INFO 80801 --- [http-nio-8080-exec-5] c.e.controller.CandidateController       : -----Create Candidate----
+2021-04-24 13:35:44.472  INFO 80801 --- [http-nio-8080-exec-5] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : ----After Around Advice Response----CandidateResponse [id=28, firstName=Henry, lastName=Michael, email=henry@gmail.com, street=primrose street, city=Sydney, technologies=[]]
+2021-04-24 13:36:02.761  INFO 80801 --- [http-nio-8080-exec-7] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Around Advice Request-----Melbourne
+2021-04-24 13:36:02.761  INFO 80801 --- [http-nio-8080-exec-7] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Before Advice-----
+2021-04-24 13:36:02.762  INFO 80801 --- [http-nio-8080-exec-7] c.e.controller.CandidateController       : ------Retrieve candidates by city-----
+2021-04-24 13:36:02.794  INFO 80801 --- [http-nio-8080-exec-7] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : ----After Around Advice Response----[CandidateResponse [id=15, firstName=Rose, lastName=Mary, email=rose@gmail.com, street=Primsrose street, city=Melbourne, technologies=[TechResponse [id=2, tech=Python, experience=2 years]]], CandidateResponse [id=16, firstName=Charles, lastName=Babbage, email=charles@gmail.com, street=Cresent street, city=Melbourne, technologies=[TechResponse [id=3, tech=Java, experience=3 years]]], CandidateResponse [id=18, firstName=Vijay, lastName=Joseph, email=vijay@gmail.com, street=Collins street, city=Melbourne, technologies=[]], CandidateResponse [id=21, firstName=Edward, lastName=Stewart, email=edward@gmail.com, street=Lonsdale street, city=Melbourne, technologies=[TechResponse [id=7, tech=Java, experience=2 years], TechResponse [id=8, tech=.net, experience=2 years]]]]
+2021-04-24 13:36:17.951  INFO 80801 --- [http-nio-8080-exec-9] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Before Advice-----
+2021-04-24 13:36:17.952  INFO 80801 --- [http-nio-8080-exec-9] c.e.controller.CandidateController       : ------Fetch candidates by first or last names---
+2021-04-24 13:36:40.060  WARN 80801 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.List<com.example.response.CandidateResponse> com.example.controller.CandidateController.getByFirstNameIn(com.example.request.InQueryRequest)]
+2021-04-24 13:37:29.376  INFO 80801 --- [http-nio-8080-exec-1] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Around Advice Request-----InQueryRequest [firstNames=[Harry, Henry]]
+2021-04-24 13:37:29.377  INFO 80801 --- [http-nio-8080-exec-1] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Before Advice-----
+2021-04-24 13:37:29.377  INFO 80801 --- [http-nio-8080-exec-1] c.e.controller.CandidateController       : ------Get candidates by first name in query-----
+2021-04-24 13:37:29.377  INFO 80801 --- [http-nio-8080-exec-1] c.e.controller.CandidateController       : ----In query request----InQueryRequest [firstNames=[Harry, Henry]]
+2021-04-24 13:37:29.396  INFO 80801 --- [http-nio-8080-exec-1] c.e.controller.CandidateController       : ---In query response---[CandidateResponse [id=27, firstName=Harry, lastName=Potter, email=harry@gmail.com, street=clowes street, city=Sydney, technologies=[TechResponse [id=14, tech=Python, experience=5 years]]], CandidateResponse [id=28, firstName=Henry, lastName=Michael, email=henry@gmail.com, street=primrose street, city=Sydney, technologies=[]]]
+2021-04-24 13:37:29.396  INFO 80801 --- [http-nio-8080-exec-1] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : ----After Around Advice Response----[CandidateResponse [id=27, firstName=Harry, lastName=Potter, email=harry@gmail.com, street=clowes street, city=Sydney, technologies=[TechResponse [id=14, tech=Python, experience=5 years]]], CandidateResponse [id=28, firstName=Henry, lastName=Michael, email=henry@gmail.com, street=primrose street, city=Sydney, technologies=[]]]
+2021-04-24 13:37:52.350  INFO 80801 --- [http-nio-8080-exec-2] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Before Advice-----
+2021-04-24 13:37:52.351  INFO 80801 --- [http-nio-8080-exec-2] c.e.controller.CandidateController       : ----Fetch candidate by firstname and lastname----
+2021-04-24 13:38:01.605  INFO 80801 --- [http-nio-8080-exec-4] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Around Advice Request-----Annie
+2021-04-24 13:38:01.605  INFO 80801 --- [http-nio-8080-exec-4] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Before Advice-----
+2021-04-24 13:38:01.605  INFO 80801 --- [http-nio-8080-exec-4] c.e.controller.CandidateController       : -----Fetch candidate(s) by firstname-----
+2021-04-24 13:38:01.617  INFO 80801 --- [http-nio-8080-exec-4] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : ----After Around Advice Response----[CandidateResponse [id=20, firstName=Annie, lastName=Louis, email=annie@gmail.com, street=Kings street, city=Sydney, technologies=[TechResponse [id=5, tech=Java, experience=4 years], TechResponse [id=6, tech=Python, experience=4 years]]]]
+2021-04-24 13:38:10.245  INFO 80801 --- [http-nio-8080-exec-3] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Before Advice-----
+2021-04-24 13:38:10.245  INFO 80801 --- [http-nio-8080-exec-3] c.e.controller.CandidateController       : ----Sort candidates----
+2021-04-24 13:38:24.835  INFO 80801 --- [http-nio-8080-exec-6] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Before Advice-----
+2021-04-24 13:38:24.835  INFO 80801 --- [http-nio-8080-exec-6] c.e.controller.CandidateController       : ----Pagination initiated----
+2021-04-24 13:38:48.826  INFO 80801 --- [http-nio-8080-exec-7] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Around Advice Request-----26
+2021-04-24 13:38:48.828  INFO 80801 --- [http-nio-8080-exec-7] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Before Advice-----
+2021-04-24 13:38:48.828  INFO 80801 --- [http-nio-8080-exec-7] c.e.controller.CandidateController       : ----Deletion initiated----
+2021-04-24 13:38:48.869  INFO 80801 --- [http-nio-8080-exec-7] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : ----After Around Advice Response----Candidate deleted successfully
+2021-04-24 13:39:26.292  INFO 80801 --- [http-nio-8080-exec-9] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Around Advice Request-----Charles
+2021-04-24 13:39:26.292  INFO 80801 --- [http-nio-8080-exec-9] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : -----Inside Before Advice-----
+2021-04-24 13:39:26.292  INFO 80801 --- [http-nio-8080-exec-9] c.e.controller.CandidateController       : --------Delete candidate by firstname------
+2021-04-24 13:39:26.299  INFO 80801 --- [http-nio-8080-exec-9] tConfig$$EnhancerBySpringCGLIB$$70cfefe9 : ----After Around Advice Response----1 candidate(s) deleted
+2021-04-24 13:39:46.923  INFO 80801 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-24 13:39:46.926  INFO 80801 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 13:39:46.929  INFO 80801 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-24 13:39:46.941  INFO 80801 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-24 14:34:10.140  INFO 81120 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 14.0.1 on Saravanans-MacBook-Pro.local with PID 81120 (/Users/jeyalakshmi/eclipse-workspace/demo/target/classes started by jeyalakshmi in /Users/jeyalakshmi/eclipse-workspace/demo)
+2021-04-24 14:34:10.149  INFO 81120 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2021-04-24 14:34:10.720  INFO 81120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-24 14:34:10.779  INFO 81120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2021-04-24 14:34:11.504  INFO 81120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-24 14:34:11.513  INFO 81120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-24 14:34:11.513  INFO 81120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-24 14:34:11.597  INFO 81120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-24 14:34:11.597  INFO 81120 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1397 ms
+2021-04-24 14:34:11.719  INFO 81120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-24 14:34:12.082  INFO 81120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-24 14:34:12.120  INFO 81120 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-24 14:34:12.151  INFO 81120 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-24 14:34:12.253  INFO 81120 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-24 14:34:12.340  INFO 81120 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-04-24 14:34:12.829  INFO 81120 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-24 14:34:12.836  INFO 81120 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 14:34:13.478  WARN 81120 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 14:34:13.566  INFO 81120 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 14:34:14.267  INFO 81120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-24 14:34:14.276  INFO 81120 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 4.695 seconds (JVM running for 5.026)
+2021-04-24 14:34:42.085  INFO 81120 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-24 14:34:42.087  INFO 81120 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-24 14:34:42.088  INFO 81120 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-24 14:34:42.739  INFO 81120 --- [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 236 ms
+2021-04-24 14:34:53.649  INFO 81120 --- [http-nio-8080-exec-5] tConfig$$EnhancerBySpringCGLIB$$f978792c : -----Inside Before Advice-----
+2021-04-24 14:34:53.664  INFO 81120 --- [http-nio-8080-exec-5] c.e.controller.CandidateController       : ----Get all the candidates list----
+2021-04-24 14:36:01.995  INFO 81120 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-24 14:36:01.997  INFO 81120 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 14:36:01.999  INFO 81120 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-24 14:36:02.009  INFO 81120 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-24 14:54:24.078  INFO 81175 --- [main] com.example.demo.DemoApplicationTests    : Starting DemoApplicationTests using Java 14.0.1 on Saravanans-MacBook-Pro.local with PID 81175 (started by jeyalakshmi in /Users/jeyalakshmi/eclipse-workspace/demo)
+2021-04-24 14:54:24.082  INFO 81175 --- [main] com.example.demo.DemoApplicationTests    : No active profile set, falling back to default profiles: default
+2021-04-24 14:54:24.636  INFO 81175 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-24 14:54:24.699  INFO 81175 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2021-04-24 14:54:25.608  INFO 81175 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-24 14:54:25.990  INFO 81175 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-24 14:54:26.056  INFO 81175 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-24 14:54:26.124  INFO 81175 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-24 14:54:26.305  INFO 81175 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-24 14:54:26.437  INFO 81175 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-04-24 14:54:27.065  INFO 81175 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-24 14:54:27.074  INFO 81175 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 14:54:28.098  WARN 81175 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 14:54:28.258  INFO 81175 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 14:54:29.323  INFO 81175 --- [main] com.example.demo.DemoApplicationTests    : Started DemoApplicationTests in 5.492 seconds (JVM running for 6.416)
+2021-04-24 14:54:29.616  INFO 81175 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-24 14:54:29.618  INFO 81175 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 14:54:29.620  INFO 81175 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-24 14:54:29.630  INFO 81175 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-24 15:10:59.060  INFO 81435 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 14.0.1 on Saravanans-MacBook-Pro.local with PID 81435 (/Users/jeyalakshmi/eclipse-workspace/demo/target/classes started by jeyalakshmi in /Users/jeyalakshmi/eclipse-workspace/demo)
+2021-04-24 15:10:59.071  INFO 81435 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2021-04-24 15:10:59.527  INFO 81435 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-24 15:10:59.588  INFO 81435 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+2021-04-24 15:11:00.282  INFO 81435 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-24 15:11:00.291  INFO 81435 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-24 15:11:00.291  INFO 81435 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-24 15:11:00.373  INFO 81435 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-24 15:11:00.374  INFO 81435 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1255 ms
+2021-04-24 15:11:00.494  INFO 81435 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-24 15:11:00.818  INFO 81435 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-24 15:11:00.856  INFO 81435 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-24 15:11:00.887  INFO 81435 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-04-24 15:11:00.986  INFO 81435 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-24 15:11:01.074  INFO 81435 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-04-24 15:11:01.565  INFO 81435 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-24 15:11:01.572  INFO 81435 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 15:11:02.209  WARN 81435 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-24 15:11:02.299  INFO 81435 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-24 15:11:03.028  INFO 81435 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-24 15:11:03.036  INFO 81435 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 4.354 seconds (JVM running for 4.696)
+2021-04-24 15:11:26.169  INFO 81435 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-24 15:11:26.171  INFO 81435 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-24 15:11:26.174  INFO 81435 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-24 15:11:26.185  INFO 81435 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

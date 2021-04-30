@@ -106,4 +106,8 @@ local.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/eclipse
 
+mvnw
+mvnw.cmd
+.mvn/wrapper
+.DS_Store
 

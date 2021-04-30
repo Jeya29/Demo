@@ -1,20 +1,19 @@
-package com.example.aop;
+package com.org.aop;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
+import lombok.extern.slf4j.Slf4j;
 
 
 @Configuration
 @Aspect
+@Slf4j
 public class AspectConfig {
 	
-	Logger log = LoggerFactory.getLogger(getClass());
 	
 	@Before(value = "execution(* com.example.controller.*.*(..))")
 	public void beforeAdvice(JoinPoint joinPoint){
@@ -22,22 +21,8 @@ public class AspectConfig {
 		log.info("-----Inside Before Advice-----");
 	}
 	
-	/* After Advice with one argument as request*/
 	
-	/*@After(value = "execution(* com.example.controller.*.*(..)) and args(object)")
-	public void afterAdvice(JoinPoint joinPoint,Object object){
-		
-		log.info("-----Inside After Advice-----" + object);
-	}*/
-	
-	/* After Advice with one argument & response in return*/
-//	@AfterReturning(value = "execution(* com.example.controller.*.*(..)) and args(object)",returning="returningObject")
-//	public void AfterReturningAdvice(JoinPoint joinPoint,Object object,Object returningObject){
-//		
-//		log.info("-----After returning Advice Response-----" + returningObject);
-//	}
-	
-	/* Around Advice with one argument as request & response in return)*/
+	/* Around Advice with one argument as request & response in return */
 	@Around(value = "execution(* com.example.controller.*.*(..)) and args(object)")
 	public Object AroundAdvice(ProceedingJoinPoint proceedingJoinPoint,Object object){
 		
@@ -57,6 +42,20 @@ public class AspectConfig {
 		return returningObject;
 		
 		
+	}
+	
+	@Around("@annotation(com.org.aop.TrackExecutionTime)")
+	public Object executionTime(ProceedingJoinPoint point) throws Throwable {
+		
+		long startTime = System.currentTimeMillis();
+		Object obj = point.proceed();
+		long endTime = System.currentTimeMillis();
+		
+		log.info("Class Name: " + point.getSignature().getDeclaringTypeName()+
+				". Method Name: " + point.getSignature().getName()+". Time taken for execution is : " +
+				(endTime-startTime) + "ms");
+		
+		return obj;
 	}
 	
 	

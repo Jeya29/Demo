@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.org.candidate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,14 +9,14 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @SpringBootApplication
-@ComponentScan({"com.example.controller","com.example.service","com.example.aop"})
-@EntityScan("com.example.entity")
-@EnableJpaRepositories("com.example.repository")
+@ComponentScan({"com.org.controller","com.org.service","com.org.aop","com.org.exception"})
+@EntityScan("com.org.entity")
+@EnableJpaRepositories("com.org.repository")
 
-public class DemoApplication{
+public class CandidateApplication{
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(CandidateApplication.class, args);
 	}
 
 }

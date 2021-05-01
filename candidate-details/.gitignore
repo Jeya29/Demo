@@ -199,4 +199,8 @@ $RECYCLE.BIN/
 mvnw
 mvnw.cmd
 
+.DS_Store
+.mvn/wrapper/maven-wrapper.properties
+.mvn/wrapper/MavenWrapperDownloader.java
+
 # End of https://www.gitignore.io/api/git,java,maven,eclipse,windows

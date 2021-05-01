@@ -5,7 +5,6 @@ package com.org.response;
 import com.org.entity.Address;
 import com.org.entity.Candidate;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

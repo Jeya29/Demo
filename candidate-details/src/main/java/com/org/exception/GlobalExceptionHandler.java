@@ -86,7 +86,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 		List<String> details = new ArrayList<String>();
 		details.add(ex.getLocalizedMessage());
 		
-		ApiError err = new ApiError(LocalDateTime.now(),HttpStatus.BAD_REQUEST.value(), HttpStatus.BAD_REQUEST, "Error occured",request.getDescription(false), details);
+		ApiError err = new ApiError(LocalDateTime.now(),HttpStatus.INTERNAL_SERVER_ERROR.value(), HttpStatus.INTERNAL_SERVER_ERROR, "Error occured",request.getDescription(false), details);
 		
 		return ResponseEntityBuilder.build(err);
 

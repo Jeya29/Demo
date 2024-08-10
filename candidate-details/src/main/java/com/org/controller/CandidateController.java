@@ -186,7 +186,7 @@ public class CandidateController{
 	@TrackExecutionTime
 	public ResponseEntity<List<CandidateResponse>> getByFirstNameOrLastName(@PathVariable("first-name") String firstName,@PathVariable("last-name") String LastName) throws Exception {
 		
-		log.info("------Fetch candidates by first or last names---");
+		log.info("------Fetch candidates by first name or last name---");
 
 		List<Candidate> candidates = candidateService.getByFirstNameOrLastName(firstName,LastName);
 		
